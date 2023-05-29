@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="header2">
+                <nav>
+                    <div class="brand"><span>XVII</span></div>
+                    <ul>
+                        <li><a href="#" id="Interior">Interior</a></li>
+                        <li><a href="#" id="Exterior">Exterior</a></li>
+                        <li><a href="#" id="features">Features</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="station">
+                        <button>Buy</button>
+                    </div>
+                </nav>
+                <section>
+                    <div class="content">
+                        <h1>
+                            All About <br />
+                            Porsche 911
+                        </h1>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. In minus, quis ad ut possimus quas non
+                            similique dolorem sequi dolorum. Lorem, ipsum dolor.
+                        </p>
+                        <button>Learn More</button>
+                    </div>
+                </section>
+                <footer id="footer">
+                    <li>Max Power: 379.50bhp</li>
+                    <li>Max Torque: 465Nm</li>
+                    <li>No. of cylinder: 6</li>
+                    <li>Turbo Charger</li>
+                    <li>Gear Box: 8-Speed</li>
+                    <li>Top Speed: 293(Kmph)</li>
+                </footer>
+        </header>
+        <script>
+            const features = document.getElementById("features");
+            const footer = document.getElementById("footer");
+
+            features.addEventListener("click", () => {
+                footer.classList.toggle("footers");
+                features.classList.toggle("clicks");
+            });
+        </script>
+
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </body>
+</html>

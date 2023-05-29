@@ -1,0 +1,209 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    /* background: #083621; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid #81d1ad; */
+    /* border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(185, 185, 185, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+header .header2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("/images/lamb2.jpg") no-repeat center center/cover;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+header .header2 nav {
+    width: 90%;
+    height: 12%;
+    /* border: 1px solid#fff; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header2 nav .brand {
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid#fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header2 nav .brand span {
+    width: 45%;
+    height: 35px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header .header2 nav ul {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid#fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header2 nav ul li {
+    list-style-type: none;
+    padding: 3px 10px;
+}
+header .header2 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+header .header2 nav ul li a:hover {
+    color: #000000;
+    text-shadow: 0px 0px 28px #000000;
+}
+
+header .header2 nav .station {
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid#fff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .header2 nav .station button {
+    padding: 6px 12px;
+    background: none;
+    color: #000000;
+    border: 1px solid #000;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px 0px 0px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+header .header2 nav .station button:hover {
+    border-radius: 0px 10px 0px 10px;
+    border: 1px solid #000;
+    color: #000;
+    box-shadow: 0px 0px 30px #000;
+}
+
+section {
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section .content {
+    width: 350px;
+    height: auto;
+    /* border: 1px solid #fff; */
+    color: #fff;
+}
+
+section .content h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+section .content p {
+    font-size: 11px;
+    font-family: "system-ui";
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+section .content button {
+    padding: 5px 12px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+section .content button:hover {
+    background: transparent;
+    color: #000;
+}
+
+footer {
+    position: absolute;
+    width: 90%;
+    height: 65px;
+    bottom: -65px;
+    /* border: 1px solid #fff; */
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.8s ease-in-out;
+}
+
+footer li {
+    color: #000;
+    list-style: none;
+    font-size: 10px;
+    font-family: "system-ui";
+    font-weight: bold;
+    text-shadow: 0px 0px 28px #000;
+}
+
+/* js */
+
+.footers {
+    bottom: 0px;
+}
+
+.clicks {
+    text-shadow: 0px 0px 28px #000;
+}
